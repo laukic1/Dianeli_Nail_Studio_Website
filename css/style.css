@@ -13,7 +13,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #1d2434;
+    color: #000000;
 }
 
 a {
@@ -54,7 +54,7 @@ a:focus {
 }
 
 .back-to-top:hover {
-    background: #1d2434;
+    background: #000000;
 }
 
 .back-to-top:hover i {
@@ -62,7 +62,7 @@ a:focus {
 }
 
 .back-to-top i {
-    color: #1d2434;
+    color: #000000;
     padding-top: 10px;
 }
 
@@ -73,7 +73,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 60px;
-    background: #1d2434;
+    background: #000000;
 }
 
 .top-bar .top-bar-left {
@@ -141,7 +141,7 @@ a:focus {
 }
 
 .top-bar .social a:hover {
-    color: #D5B981;
+    color: #D4AF37;
     background: #ffffff;
 }
 
@@ -203,7 +203,7 @@ a:focus {
     margin-top: 0;
     border: 0;
     border-radius: 0;
-    background: #f8f9fa;
+    background: #D4AF37;
 }
 
 @media (min-width: 992px) {
@@ -218,7 +218,7 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #1d2434 !important;
+        background: #000000 !important;
     }
     
     .navbar a.nav-link {
@@ -232,7 +232,7 @@ a:focus {
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: #1d2434 !important;
+        background: #000000 !important;
     }
     
     .navbar a.nav-link {
@@ -253,7 +253,8 @@ a:focus {
     width: 100%;
     margin-bottom: 45px;
     height: calc(100vh - 60px);
-    background: #D5B981;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     overflow: hidden;
 }
 
