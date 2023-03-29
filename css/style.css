@@ -7,6 +7,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
 h1,
 h2, 
 h3, 
@@ -145,6 +147,14 @@ a:focus {
     background: #ffffff;
 }
 
+.fab  {
+    color: #D5B981;
+}
+
+.fa-brands {
+    color: #D5B981;
+}
+
 @media (min-width: 992px) {
     .top-bar {
         padding: 0 60px;
@@ -213,7 +223,7 @@ a:focus {
         width: 100%;
         top: 60px;
         padding: 20px 60px;
-        background: rgba(0, 0, 0, .1) !important;
+        background: rgba(0, 0, 0, 0.1) !important;
         z-index: 9;
     }
     
