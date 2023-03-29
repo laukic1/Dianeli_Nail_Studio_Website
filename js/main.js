@@ -104,7 +104,6 @@
         }
     });
     
-    
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',

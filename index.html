@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
         <!-- CSS Libraries -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -23,13 +24,19 @@
 
         <!-- Template Stylesheet -->
         <!-- <link href="css/style.css" rel="stylesheet"> -->
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         
     </head>
 
     <body>
+        <div id="loading">
+            <img id="loading-image" src="img/ajax-loader.gif" alt="Loading..." />
+          </div>
+          
+          
         <!-- Top Bar Start -->
         <div class="top-bar d-none d-md-block">
+            
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
@@ -47,9 +54,9 @@
                     <div class="col-md-6">
                         <div class="top-bar-right">
                             <div class="social">
-                                <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@dianelistudio"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="https://www.facebook.com/lepotnistudiodianeli1/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/dianeli_lepotni_studio/?hl=en"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -99,7 +106,7 @@
                             <p>
                                Nauči se polepšati nohtke in postani profesionalka tudi ti!
                             </p>
-                            <a class="btn" href="team.html">Prijavi se</a>
+                            <a class="btn" href="tečaji.html">Prijavi se</a>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 d-none d-md-block">
@@ -108,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.tiktok.com/@dianelistudio/video/7210700212157877509" data-target="#videoModal">
                     <span></span>
                 </button>
             </div>
@@ -401,7 +408,7 @@
                         </div>
                         <div class="blog-meta">
                             <i class="fa fa-list-alt"></i>
-                            <a href="">Hair Cut</a>
+                            <a href=""></a>
                             <i class="fa fa-calendar-alt"></i>
                             <p>01-Jan-2045</p>
                         </div>
@@ -413,7 +420,7 @@
                         </div>
                         <div class="blog-meta">
                             <i class="fa fa-list-alt"></i>
-                            <a href="">Beard Style</a>
+                            <a href=""></a>
                             <i class="fa fa-calendar-alt"></i>
                             <p>01-Jan-2045</p>
                         </div>
@@ -425,7 +432,7 @@
                         </div>
                         <div class="blog-meta">
                             <i class="fa fa-list-alt"></i>
-                            <a href="">Color & Wash</a>
+                            <a href=""></a>
                             <i class="fa fa-calendar-alt"></i>
                             <p>01-Jan-2045</p>
                         </div>
@@ -437,7 +444,7 @@
                         </div>
                         <div class="blog-meta">
                             <i class="fa fa-list-alt"></i>
-                            <a href="">Hair Cut</a>
+                            <a href=""></a>
                             <i class="fa fa-calendar-alt"></i>
                             <p>01-Jan-2045</p>
                         </div>
@@ -449,7 +456,7 @@
                         </div>
                         <div class="blog-meta">
                             <i class="fa fa-list-alt"></i>
-                            <a href="">Beard Style</a>
+                            <a href=""></a>
                             <i class="fa fa-calendar-alt"></i>
                             <p>01-Jan-2045</p>
                         </div>
@@ -461,7 +468,7 @@
                         </div>
                         <div class="blog-meta">
                             <i class="fa fa-list-alt"></i>
-                            <a href="">Color & Wash</a>
+                            <a href=""></a>
                             <i class="fa fa-calendar-alt"></i>
                             <p>01-Jan-2045</p>
                         </div>
@@ -486,9 +493,9 @@
                                     <p><i class="fa fa-phone-alt"></i>+386 30 651 698</p>
                                     <p><i class="fa fa-envelope"></i>dianelitecaji@gmail.com</p>
                                     <div class="footer-social">
-                                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.tiktok.com/@dianelistudio"><i class="fa-brands fa-tiktok"></i></a>
+                                        <a href="https://www.facebook.com/lepotnistudiodianeli1/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/dianeli_lepotni_studio/?hl=en"><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -529,6 +536,11 @@
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
         <!-- JavaScript Libraries -->
+        <script>
+            $(window).on('load', function () {
+              $('#loading').fadeOut();
+            }) 
+          </script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
@@ -539,9 +551,9 @@
         <!-- Contact Javascript File -->
         <script src="mail/jqBootstrapValidation.min.js"></script>
         <script src="mail/contact.js"></script>
-
         <!-- Template Javascript -->
         <!-- <script src="js/main.js"></script> -->
-        <script src="js/main.min.js"></script>
+        <script src="js/main.js"></script>
+        
     </body>
 </html>
