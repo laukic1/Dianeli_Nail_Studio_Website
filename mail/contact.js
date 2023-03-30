@@ -8,8 +8,8 @@ $(function () {
             event.preventDefault();
             var name = $("input#name").val();
             var email = $("input#email").val();
+            var number = $("input#number").val();
             var subject = $("input#subject").val();
-            var message = $("textarea#message").val();
 
             $this = $("#sendMessageButton");
             $this.prop("disabled", true);
@@ -20,8 +20,8 @@ $(function () {
                 data: {
                     name: name,
                     email: email,
-                    subject: subject,
-                    message: message
+                    number: number,
+                    subject: subject
                 },
                 cache: false,
                 success: function () {
