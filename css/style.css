@@ -710,7 +710,6 @@ a:focus {
     bottom: 15px;
     left: 15px;
     background: transparent;
-    border: 1px solid #ffffff;
     z-index: 1;
 }
 
@@ -1309,13 +1308,23 @@ a:focus {
     margin-bottom: 30px;
 }
 
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
 .single .ul-group {
     padding: 0;
     list-style: none;
 }
 
-.single .ul-group li {
-    margin-left: 2px;
+li {
+    margin: 5px 2px;
 }
 
 .single .ul-group li::before {
