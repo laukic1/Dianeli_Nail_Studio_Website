@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Dianeli Lepotni Studio - Kontakt</title>
+        <title>Dianeli Lepotni Studio - Uspešna prijava</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
         <!-- CSS Libraries -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
         <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -25,6 +26,9 @@
     </head>
 
     <body>
+        <div id="loading">
+            <img id="loading-image" src="img/ajax-loader.gif" alt="Loading..." />
+          </div>
          <!-- Top Bar Start -->
          <div class="top-bar d-none d-md-block">
             <div class="container-fluid">
@@ -87,79 +91,20 @@
 
 
         <!-- Page Header Start -->
-        <div class="page-header">
-            <div class="container">
+        <div id="zahvala1" class="page-header">
+                <h2>Hvala vam za zaupanje!</h2><br><br><br>
                 <div class="row">
                     <div class="col-12">
-                        <h2>Hvala vam za zaupanje!</h2>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+                        <img src="img/zahvala.png" alt="Image">
+                        </div>
+                        </div>
+     </div>
         <!-- Page Header End -->
 
 
-        <!-- Single Page Start -->
-        <div class="single">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2>This is Single Page Title</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <img src="img/single.jpg" alt="Image">
-                        <p></p><br><br>
-                        <h2>Kontakt</h2><br>
-                       
-                        <ul class="list-group">
-                            <li class="list-group-item"><b>Podjetje:</b> Lepotni studio Dianeli, Aleš Hribar s.p (D.Š.: SI48041572)</li>
-                            <li class="list-group-item"><b>Naslov:</b> Prvomajska ulica 25, 2000 Maribor</li>
-                            <li class="list-group-item"><b>Telefonska številka:</b> 030 651 698</li>
-                            <li class="list-group-item"><b>E-pošta:</b> dianelitecaji@gmail.com</li>
-                            <li class="list-group-item"><b>Delovni čas:</b> po dogovoru</li>
-                        </ul>
-                        <p></p><br><br>
-                        <h2>Varstvo osebnih podatkov</h2><br>
-                        <p>
-                            V Lepotnem studio Dianeli vam omogočamo kvalitetne storitve. Vaši podatki, kot je telefonska številka in e-poštni naslov, se ne bodo uporabljali za nobene druge namene. Podatke obravnavamo z največjo mero zaupnosti, zgolj za interno evidenco. Vaši podatki bodo skrbno varovani pred zlorabo, izgubo, razkrivanjem, spreminjanjem in nepooblašlenim dostopom.</p><br>
-                        <p>Lepotni studio Dianeli se zavezuje, da spoštuje vašo zasebnost in varnost ter spoštuje pravila GDPR.
-                        </p>
-                        <!-- <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Table Head</th>
-                                    <th>Table Head</th>
-                                    <th>Table Head</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Table Cell</td>
-                                    <td>Table Cell</td>
-                                    <td>Table Cell</td>
-                                </tr>
-                                <tr>
-                                    <td>Table Cell</td>
-                                    <td>Table Cell</td>
-                                    <td>Table Cell</td>
-                                </tr>
-                                <tr>
-                                    <td>Table Cell</td>
-                                    <td>Table Cell</td>
-                                    <td>Table Cell</td>
-                                </tr>
-                            </tbody>
-                        </table> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Single Page End -->
-
 
          <!-- Footer Start -->
-         <div class="footer">
+         <div id="zahvala" class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
@@ -212,7 +157,11 @@
         <!-- Footer End -->
 
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
+<script>
+            $(window).on('load', function () {
+              $('#loading').fadeOut();
+            }) 
+          </script>
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

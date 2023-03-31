@@ -1351,6 +1351,11 @@ li {
     background: #1d2434;
 }
 
+#zahvala, #zahvala1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .footer .footer-contact,
 .footer .footer-link,
 .footer .footer-newsletter {
