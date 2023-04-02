@@ -1352,9 +1352,27 @@ li {
 }
 
 #zahvala, #zahvala1 {
+    display: grid;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
+
+@media (max-width: 767.98px) {
+     #zah {
+        max-width: 100%;
+        width: 100%;
+        height: auto !important;
+    }
+}
+
+/* #zah {
+    display: flex;
+    justify-content: center;
+} */
+
+
 
 .footer .footer-contact,
 .footer .footer-link,
