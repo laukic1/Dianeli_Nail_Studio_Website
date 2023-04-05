@@ -280,6 +280,7 @@ a:focus {
 /*******************************/
 /********** Hero CSS ***********/
 /*******************************/
+
 .hero {
     position: relative;
     width: 100%;
@@ -288,6 +289,21 @@ a:focus {
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
                 radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     overflow: hidden;
+}
+
+@media only screen and (max-width:430px) {
+.hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 45px;
+    height: calc(100vh - 60px);
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.343), rgba(23, 23, 23, 0.73)), 
+    url('../img/hero1.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
 }
 
 .hero .container-fluid {
@@ -424,7 +440,7 @@ a:focus {
   }
 }
 
-#videoModal .modal-dialog {
+/* #videoModal .modal-dialog {
     position: relative;
     max-width: 800px;
     margin: 60px auto;
@@ -444,11 +460,12 @@ a:focus {
     font-weight: normal;
     color: #ffffff;
     opacity: 1;
-}
+} */
 
 @media (max-width: 991.98px) {
     .hero .hero-text {
         padding-left: 15px;
+        padding-right: 15px
     }
     
     .hero .hero-text h1 {
@@ -500,7 +517,14 @@ a:focus {
         font-weight: 400;
         letter-spacing: 0;
     }
+    
 }
+/* @media only screen and (max-width:1024px) {
+    .hero .hero-image img {
+        background-image: url("img/hero.jpg")!important;
+        height: 400px!important;
+    }
+} */
 
 
 /*******************************/
@@ -520,6 +544,13 @@ a:focus {
     color: #1d2434;
     font-size: 60px;
     font-weight: 700;
+}
+
+.page-header h4 {
+    position: relative;
+    color: #1d2434;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .page-header a {
@@ -599,6 +630,11 @@ a:focus {
     padding: 45px 0;
 }
 
+.abt {
+    display: grid;
+    justify-content: center;
+}
+
 .about .section-header {
     margin-bottom: 30px;
     margin-left: 0;
@@ -644,6 +680,7 @@ a:focus {
 
 .about .about-text p {
     font-size: 16px;
+    text-align:justify!important;
 }
 
 .about .about-text a.btn {
