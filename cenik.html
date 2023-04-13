@@ -68,7 +68,7 @@
                         <a href="index.html" class="nav-item nav-link">Domov</a>
                         <a href="o meni.html" class="nav-item nav-link">O meni</a>
                         <a href="tečaji.html" class="nav-item nav-link">Tečaji</a>
-                        <a href="cenik.html" class="nav-item nav-link active">Cenik</a>
+                        <a href="cenik.html" class="nav-item nav-link active">Prijave</a>
                         <a href="faq.html" class="nav-item nav-link">FAQ</a>
                         <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -102,39 +102,36 @@
         <!-- Page Header End -->
 
 
-        <!-- Pricing Start -->
-        <div class="price">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Cenik</p>
-                    <h2>Uredi si ali urejaj nohtke sama</h2>
-                </div>
-                <div class="row">
-                    
-                    <div class="col-lg-4 col-md-6">
-                        <div class="price-item">
-                            <div class="price-img">
-                                <img src="img/price-11.jpg" alt="Image">
+        <!-- Contact Start -->
+        <div class="contact">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <div>
+                                <h1 class="prijava">Pošlji povpraševanje za cenik</h1>                           
                             </div>
-                            <div class="price-text">
-                                <h2>Cenik storitev</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="price-item">
-                            <div class="price-img">
-                                <img src="img/price-12.jpg" alt="Image">
-                            </div>
-                            <div class="price-text">
-                                <h2>Cenik tečajev</h2>
-                            </div>
+                            <div id="success"></div>
+                            <form action ='https://formsubmit.co/dlauko96@gmail.com' method="POST" name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <div class="control-group">
+                                    <input type="email" class="form-control" name="email" placeholder="E-mail" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="http://127.0.0.1:8080/zahvala.html">
+                                <div>
+                                    <button class="btn" type="submit" id="sendMessageButton">Pošlji</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Pricing End -->
+    </div>
+    <!-- Contact End -->
 
 
         <!-- Footer Start -->
