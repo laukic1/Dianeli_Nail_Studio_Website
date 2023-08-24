@@ -911,6 +911,23 @@ a:focus {
     z-index: 2;
 }
 
+
+
+.download-icon {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 2.5em;
+    
+}
+
+.contact-form, .cenik {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
 .team .team-text h2 {
     font-size: 16px;
     font-weight: 600;
@@ -1257,10 +1274,15 @@ a:focus {
 }
 
 .prijava {
-    position: relative;
-    padding: 0px 0px 40px 0px;
     color: #D4AF37;
     font-weight: bold;   
+    margin-right: 1rem;
+    font-size: 44px;
+}
+
+.prijava:hover {
+    color:#ceb566;
+    transition: ease-in-out 0.3s;
 }
 
 .info {
