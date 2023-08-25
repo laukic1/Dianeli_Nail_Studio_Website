@@ -7,6 +7,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+    
+}
+
 #loading {
     position: fixed;
     display: flex;
@@ -281,6 +286,64 @@ a:focus {
 /********** Hero CSS ***********/
 /*******************************/
 
+
+/* .wrapper .sex-texts {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loader {
+    position: relative;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: black;
+    animation: blinkCursor 0.8s steps(3) infinite;
+}
+
+@keyframes blinkCursor {
+    0%,75%
+    {
+        opacity: 1;
+    }
+    76%,100% {
+       opacity: 0%; 
+    }
+}
+
+.loader h2 {
+    width: 180px;
+    color: white;
+    text-shadow: 0 0 5px white;
+    letter-spacing: 1px;
+    animation: typing 7.5s steps(40) 1 alternate backwards;
+    overflow: hidden;
+    font-size: 50px;
+    padding: 10px 0 10px 0;
+}
+
+@keyframes typing {
+    0%, 90%, 100% {
+        width: 0;
+    }
+    30%, 60%, 100% {
+        width: 180px;
+    }
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -289,7 +352,24 @@ a:focus {
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
                 radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     overflow: hidden;
+    background-size: 200% 200%;
+    animation: color 15s ease-in-out infinite;
 }
+
+@keyframes color {
+    0% {
+      background-position: 0 50%;  
+    }
+    50% {
+        background-position: 100% 50%;  
+      }
+      100% {
+        background-position: 0 50%;  
+      }
+
+}
+
+
 
 @media only screen and (max-width:430px) {
 .hero {
@@ -318,6 +398,8 @@ a:focus {
 .hero .hero-image img {
     max-width: 80%;
     max-height: 80%;
+    box-shadow: 0 0 20px black;
+    
 }
 
 .hero .hero-text {
