@@ -883,7 +883,7 @@ a:focus {
 .team {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 45px 0 100px 0;
 }
 
 .team .team-item {
@@ -931,7 +931,7 @@ a:focus {
     margin-left: 4.5rem;
 }
 
-.contact-form, .cenik {
+   .cenik {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1052,7 +1052,8 @@ a:focus {
 .blog {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+    padding: 45px ;
+    margin-top: 100px;
 }
 
 .blog .blog-carousel {
@@ -1275,14 +1276,14 @@ a:focus {
     position: relative;
     width: 100%;
     background: #000000;
-    
+
 }
 
-.contact .container-fluid {
+.contact .container-fluid, .cene {
     background: url(../img/contact.jpg) left center no-repeat;
     background-size: contain; 
-    margin: -50px;
-
+    margin-bottom: -50px;
+    margin-top: -50px;
 } 
 
 .prijava {
@@ -1542,6 +1543,8 @@ li {
 }
 
 .footer .copyright {
+    max-width: 100%;
+    width: 100%;
     padding: 0 30px;
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
                 radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
@@ -1552,6 +1555,7 @@ li {
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     padding-top: 25px;
     padding-bottom: 25px;
+    
 }
 
 .footer .copyright p {
@@ -1568,6 +1572,7 @@ li {
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    
 }
 
 .footer .copyright .col-md-6:last-child p {
