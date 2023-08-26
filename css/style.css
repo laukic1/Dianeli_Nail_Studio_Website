@@ -391,13 +391,13 @@ a:focus {
 
 @keyframes typing {
     0% {
-        width:0px;
+        width:0vw;
     }
     40%, 60% {
-        width: 390px;
+        width: 22.5vw;
     }
      70%, 90%, 100% {
-        width: 520px;
+        width: 30.5vw;
     }
 }
 
@@ -454,13 +454,13 @@ a:focus {
 
 @keyframes typing {
     0% {
-        width:0px;
+        width:0vw;
     }
     40%, 60% {
-        width: 240px;
+        width: 62vw;
     }
      70%, 90%, 100% {
-        width: 325px;
+        width: 83vw;
     }
 }
 
