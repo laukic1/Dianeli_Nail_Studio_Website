@@ -411,6 +411,7 @@ a:focus {
     overflow: hidden;
     background-size: 300% 300%;
     animation: color 8s ease-in-out infinite;
+    box-shadow: 0 0 10px 0 #D5B981;
 }
 
 @keyframes color {
@@ -1177,6 +1178,7 @@ a:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 0 10px 0 #D5B981;
 }
 
 .testimonial .container {
@@ -1498,7 +1500,7 @@ a:focus {
     position: relative;
     width: 100%;
     background: black;
-
+    box-shadow: 0 0 10px 0 #D5B981;
 
 }
 
@@ -1643,7 +1645,9 @@ li {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #1d2434;
+    background: #000000;
+    border-top: 1px solid #D5B981;
+    box-shadow: 0 0 10px 0 #D5B981;
 }
 
 #zahvala, #zahvala1 {
