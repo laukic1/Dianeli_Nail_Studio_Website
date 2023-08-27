@@ -436,21 +436,6 @@ a:focus {
 }
 
 @media only screen and (max-width:430px) {
-    .loader::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 100%;
-        transform: translateY(-330%);
-        width: 0px;
-        height: 10%;
-        border-radius: 100%;
-        animation: blinkCursor 0.35s steps(3) 5 alternate;
-        background: white;
-        
-        
-    }
 
 .hero {
     position: relative;
