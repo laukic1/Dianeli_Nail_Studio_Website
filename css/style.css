@@ -416,7 +416,7 @@ a:focus {
     animation: typing 2s steps(500) 1 alternate forwards;
     overflow: hidden;
     white-space: nowrap; /* Prevent line break */
-    font-size: 3em;
+    font-size: 2em;
     padding: 10px 0;
     margin: 0;
     font-weight: bold;
