@@ -428,6 +428,43 @@ a:focus {
 }
 
 
+@media only screen and (max-width: 376px) {
+    .loader h2 {
+        font-size: 29px!important;
+        letter-spacing: 0.01em;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+    .loader h2 {
+        font-size: 30px!important;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .loader h2 {
+        font-size: 32px!important;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .loader h2 {
+        font-size: 32px!important;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .loader h2 {
+        font-size: 30px!important;
+    }
+}
+
+@media only screen and (max-width: 361px) {
+    .loader h2 {
+        font-size: 27.5px!important;
+        letter-spacing: 0.04em;
+    }
+}
 
 @media only screen and (max-width:430px) {
 .hero {
@@ -451,6 +488,8 @@ a:focus {
 .loader::before {
     width: 6px;
 }
+
+
 
 @keyframes typing {
     0% {
