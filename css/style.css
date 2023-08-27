@@ -489,20 +489,6 @@ a:focus {
     width: 6px;
 }
 
-
-
-@keyframes typing {
-    0% {
-        width:0vw;
-    }
-    40%, 60% {
-        width: 62vw;
-    }
-     70%, 90%, 100% {
-        width: 83vw;
-    }
-}
-
 }
 
 .hero .container-fluid {
