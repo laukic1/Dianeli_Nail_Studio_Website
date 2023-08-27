@@ -435,6 +435,13 @@ a:focus {
     }
 }
 
+@media only screen and (max-width: 300px) {
+    /* Adjust typography and styles for small screens */
+    .loader h2 {
+        font-size: 18px!important;
+    }
+}
+
 @media only screen and (max-width:430px) {
 
 .hero {
