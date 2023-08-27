@@ -349,7 +349,7 @@ a:focus {
     width: 0px;
     height: 10%;
     border-radius: 100%;
-    animation: blinkCursor 0.35s steps(3) 9 alternate;
+    animation: blinkCursor 0.35s steps(3) 5.8 alternate;
     background: white;
     
     
@@ -357,6 +357,7 @@ a:focus {
 
 
 @keyframes blinkCursor {
+    
     0%,75%
     {
         opacity: 1;
@@ -376,7 +377,6 @@ a:focus {
         box-shadow: none;
     }
 }
-
 
 
 .glow {
@@ -414,7 +414,7 @@ a:focus {
     width: 0;
     color: black;
     letter-spacing: 1px;
-    animation: typing 3s steps(500) 1 alternate forwards;
+    animation: typing 2s steps(500) 1 alternate forwards;
     overflow: hidden;
     white-space: nowrap; /* Prevent line break */
     font-size: 50px;
@@ -436,6 +436,22 @@ a:focus {
 }
 
 @media only screen and (max-width:430px) {
+    .loader::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 100%;
+        transform: translateY(-330%);
+        width: 0px;
+        height: 10%;
+        border-radius: 100%;
+        animation: blinkCursor 0.35s steps(3) 5 alternate;
+        background: white;
+        
+        
+    }
+
 .hero {
     position: relative;
     width: 100%;
