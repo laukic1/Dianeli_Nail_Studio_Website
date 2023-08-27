@@ -104,11 +104,6 @@
         }
     });
 
-    const loaderBefore = document.querySelector('.loader::before');
-
-loaderBefore.addEventListener('animationend', () => {
-    loaderBefore.classList.add('remove-box-shadow');
-});
     
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({

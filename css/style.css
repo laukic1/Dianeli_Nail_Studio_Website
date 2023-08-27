@@ -46,7 +46,7 @@ body::after {
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 0.90;
+    opacity: 0.70;
     background-color: #fff;
     z-index: 99;
   }
@@ -351,7 +351,6 @@ a:focus {
     border-radius: 100%;
     animation: blinkCursor 0.35s steps(3) 5.8 alternate;
     background: white;
-    
     
 }
 
