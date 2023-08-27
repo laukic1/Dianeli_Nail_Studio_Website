@@ -336,6 +336,7 @@ a:focus {
 
 .loader {
     position: relative;
+    
 }
 
 .loader::before {
@@ -345,60 +346,42 @@ a:focus {
     right: 0;
     left: 100%;
     transform: translateY(-330%);
-    width: 8px;
+    width: 0px;
     height: 10%;
-    border-radius: 50%;
-    animation: blinkCursor 0.35s steps(3) 10 alternate;
+    border-radius: 100%;
+    animation: blinkCursor 0.35s steps(3) 9 alternate;
     background: white;
-    box-shadow: 0 0 10px white;
+    
     
 }
+
 
 @keyframes blinkCursor {
     0%,75%
     {
         opacity: 1;
+        box-shadow: 0 0 20px 10px white;
     }
+
+    30%, 60% {
+        transform: translateY(-500%)
+    }
+
     76%,100% {
        opacity: 0%;
+       transform: translateY(-100%)
        
     }
     90%, 100% {
-        background: white;
-        
+        box-shadow: none;
     }
 }
 
-.loader h2 {
-    width: 0;
-    color: black;
-    letter-spacing: 1px;
-    animation: typing 3s steps(210) 1 alternate forwards;
-    overflow: hidden;
-    white-space: nowrap; /* Prevent line break */
-    font-size: 50px;
-    padding: 10px 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: 'myFont';
-    padding-left: 5px;
-}
+
 
 .glow {
     color: white;
     text-shadow: 0 0 5px white;
-}
-
-@keyframes typing {
-    0% {
-        width:0vw;
-    }
-    40%, 60% {
-        width: 22.5vw;
-    }
-     70%, 90%, 100% {
-        width: 30.5vw;
-    }
 }
 
 .hero {
@@ -427,42 +410,28 @@ a:focus {
 
 }
 
-
-@media only screen and (max-width: 376px) {
-    .loader h2 {
-        font-size: 29px!important;
-        letter-spacing: 0.01em;
-    }
+.loader h2 {
+    width: 0;
+    color: black;
+    letter-spacing: 1px;
+    animation: typing 3s steps(500) 1 alternate forwards;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent line break */
+    font-size: 50px;
+    padding: 10px 0;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'myFont';
+    padding-left: 5px;
 }
 
-@media only screen and (max-width: 391px) {
-    .loader h2 {
-        font-size: 30px!important;
+@keyframes typing {
+    0% {
+        width:0vw;
     }
-}
 
-@media only screen and (max-width: 415px) {
-    .loader h2 {
-        font-size: 2em!important;
-    }
-}
-
-@media only screen and (max-width: 412px) {
-    .loader h2 {
-        font-size: 2em!important;
-    }
-}
-
-@media only screen and (max-width: 410px) {
-    .loader h2 {
-        font-size: 1.9em!important;
-    }
-}
-
-@media only screen and (max-width: 361px) {
-    .loader h2 {
-        font-size: 1.7em!important;
-        letter-spacing: 0.04em;
+     100% {
+        width: 30.5vw;
     }
 }
 
@@ -485,11 +454,60 @@ a:focus {
     font-size: 30px;
 }
 
-.loader::before {
-    width: 6px;
+@keyframes typing {
+    0% {
+        width:0vw;
+    }
+
+     100% {
+        width: 80vw;
+    }
 }
 
 }
+
+@media only screen and (max-width: 767.98px) {
+    /* Adjust typography and styles for small screens */
+    .loader h2 {
+        font-size: 24px;
+    }
+
+    /* Adjust @keyframes typing for small screens */
+    @keyframes typing {
+        0% {
+            width:0vw;
+        }
+         100% {
+            width: 80vw;
+        }
+    }
+
+    /* Other styles for small screens */
+    .hero {
+        /* Adjust hero styles for small screens */
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    /* Adjust typography and styles for tablets and landscape mobile */
+    .loader h2 {
+        font-size: 26px;
+    }
+
+    @keyframes typing {
+        0% {
+            width:0vw;
+        }
+    
+         100% {
+            width: 81vw;
+        }
+    }
+}
+
+
+
+
 
 .hero .container-fluid {
     padding: 0;
