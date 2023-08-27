@@ -443,25 +443,25 @@ a:focus {
 
 @media only screen and (max-width: 415px) {
     .loader h2 {
-        font-size: 32px!important;
+        font-size: 2em!important;
     }
 }
 
 @media only screen and (max-width: 412px) {
     .loader h2 {
-        font-size: 32px!important;
+        font-size: 2em!important;
     }
 }
 
 @media only screen and (max-width: 410px) {
     .loader h2 {
-        font-size: 30px!important;
+        font-size: 1.9em!important;
     }
 }
 
 @media only screen and (max-width: 361px) {
     .loader h2 {
-        font-size: 27.5px!important;
+        font-size: 1.7em!important;
         letter-spacing: 0.04em;
     }
 }
