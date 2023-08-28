@@ -74,7 +74,7 @@
         
     $(".team-item").on("click", function() {
         $(".contact1").css("opacity", "0");
-        $(".contact1").css("transition", "opacity 0.3s");
+        $(".contact1").css("transition", "opacity 0.3s, ", "visibility 0s" );
 
         // Get the top offset of the contact1 section
     var contactTop = $(".team").offset().top;

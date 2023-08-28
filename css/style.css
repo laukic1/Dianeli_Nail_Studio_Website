@@ -507,6 +507,10 @@ a:focus {
     }
 }
 
+.tecaji-item{
+    padding: 3em;
+}
+
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -1379,12 +1383,15 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 100px 0;
+    
 }
 
 
 
 .team .team-img {
     position: relative;
+    box-shadow: 0 0 10px #D1B464;
+    
 }
 
 .team .team-img::after {
