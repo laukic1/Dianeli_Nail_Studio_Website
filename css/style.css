@@ -27,6 +27,42 @@ body::after {
     z-index: -1; /* Place the overlay behind the content */
 }
 
+@media screen and (max-width:430px) {
+    body {
+        margin:0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/mobile-cover.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        color: #fff;
+        
+        
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.3) 80%,
+        rgba(0, 0, 0, 0.3) 80%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+        pointer-events: none; /* Allow interaction with elements below the overlay */
+        z-index: -1; /* Place the overlay behind the content */
+    }
+}
+
 * {
     box-sizing: border-box;
     
@@ -694,6 +730,75 @@ a:focus {
         font-size: 15px;
         letter-spacing: 0;
     }
+    
+    .about-con {
+        border: 1px solid #D1B464;
+        padding: 50px;
+        margin: 0 2em 0 2em;
+        background-color: rgba(0, 0, 0, 0.75);
+        box-shadow: 0 0 10px #D1B464;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .service-con {
+        display: flex;
+        justify-content: center;
+        border: 1px solid #D1B464;
+        background: rgba(0, 0, 0, 0.75);
+        box-shadow: 0 0 10px #D1B464;
+        flex-basis: calc(33.33% - 20px); 
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #service-con-id, #service-con-id2, #service-con-id3 {
+        margin: 3em 2em 0 2em;
+        
+    }
+
+    .service-img {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #service-img1 {
+        max-width: 71%;
+        width: 20em;
+        margin: 5px;
+    } 
+
+    #service-img2 {
+        max-width: 98%;
+        width: 20em;
+        margin: 5px;
+    } 
+
+    .service .service-img {
+        display: flex;
+        position: relative;
+    }
+
+    #service-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-desc {
+        max-width: 80vw;
+        min-width: 65vw;
+    }
+
+
+
+
+
+
+    .blog .blog-img img {
+    width: 100%;
+    height: 70%;
+}
+    
+
 }
 
 @media (max-width: 767.98px) {
@@ -923,7 +1028,7 @@ a:focus {
 
 .about-con {
     border: 1px solid #D1B464;
-    padding: 50px;
+    padding: 35px;
     background-color: rgba(0, 0, 0, 0.75);
     box-shadow: 0 0 10px #D1B464;
     transition: transform 0.3s ease-in-out;
@@ -983,9 +1088,10 @@ a:focus {
     border: 1px solid #D1B464;
     background: rgba(0, 0, 0, 0.75);
     box-shadow: 0 0 10px #D1B464;
-    margin: 0 10px 0 10px;
+    margin: 0 0.5em 0 0.5em;
     flex-basis: calc(33.33% - 20px); 
     transition: transform 0.3s ease-in-out;
+    
 }
 
 .service-con:hover {
@@ -999,6 +1105,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
+    
 }
 
 .service .service-item {
@@ -1046,6 +1153,7 @@ a:focus {
     font-size: 22px;
     font-weight: 700;
     color: white;
+    
 }
 
 .service .service-item p {
@@ -1066,6 +1174,7 @@ a:focus {
     background: none;
     transition: .3s;
     box-shadow: 0 0 5px white;
+    
 }
 
 .service .service-item:hover a.btn {
@@ -1444,6 +1553,7 @@ body, p {
 .blog .blog-img {
     position: relative;
     width: 100%;
+    
 }
 
 .blog .blog-img::after {
@@ -1456,6 +1566,7 @@ body, p {
     background: transparent;
     border: 1px solid #ffffff;
     z-index: 1;
+    
 }
 
 .blog .blog-img img {
