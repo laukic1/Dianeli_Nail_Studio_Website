@@ -36,7 +36,7 @@ body::after {
         background-image: url(../img/mobile-cover.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        
         position: relative;
         color: #fff;
         
@@ -720,7 +720,7 @@ a:focus {
         background-image: url(../img/mobile-cover.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        
         position: relative;
         color: #fff;
         
@@ -745,6 +745,7 @@ a:focus {
         pointer-events: none; /* Allow interaction with elements below the overlay */
         z-index: -1; /* Place the overlay behind the content */
     }
+    
     .hero .hero-text {
         padding-left: 15px;
         padding-right: 15px
