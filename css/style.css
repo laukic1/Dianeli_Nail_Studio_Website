@@ -751,7 +751,7 @@ a:focus {
     }
 
     #service-con-id, #service-con-id2, #service-con-id3 {
-        margin: 3em 2em 0 2em;
+        margin: 3em 0.3em 0 0.3em;
         
     }
 
@@ -788,9 +788,27 @@ a:focus {
         min-width: 65vw;
     }
 
+    #team-row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 0.1em 0 0.1em;
+    }
 
+    #tecaji-columns1, #tecaji-columns2, #tecaji-columns3, #tecaji-columns4{
+        margin: 0 0em 2em 0em;
+        padding-top: 1em; 
+    }
 
+    #faq-container1, #faq-container2, #faq-container3 {
+        margin: 2em 0 5em 0;
+        padding: 10px;
+        text-align: center;
+    }
 
+    .faq-con > p {
+        padding-top: 5px;
+    }
 
 
     .blog .blog-img img {
@@ -1361,6 +1379,7 @@ a:focus {
 
 #team-img1, #team-img2, #team-img3, #team-img4  {
     height: 200px;
+    width: 200px;
 }
 
 

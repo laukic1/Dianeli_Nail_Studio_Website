@@ -44,17 +44,64 @@
     
     // Tečaji dropdown text
 
+    // $(document).ready(function() {
+    //     $(".team-item").hover(
+    //         function() {
+    //             $(".contact1").css("opacity", "0");
+    //             $(".contact1").css("transition", "opacity 0.3s");
+    //         },
+    //         function() {
+    //             $(".contact1").css("opacity", "1");
+    //         }
+    //     );
+    // });
+
     $(document).ready(function() {
-        $(".team-item").hover(
-            function() {
-                $(".contact1").css("opacity", "0");
-                $(".contact1").css("transition", "opacity 0.3s");
-            },
-            function() {
-                $(".contact1").css("opacity", "1");
-            }
-        );
+        // Only apply the hover effect on non-touch devices (desktop)
+        if (!('ontouchstart' in window)) {
+            $(".team-item").hover(
+                function() {
+                    $(".contact1").css("opacity", "0");
+                    $(".contact1").css("transition", "opacity 0.3s");
+                },
+                function() {
+                    $(".contact1").css("opacity", "1");
+                }
+            );
+        }
+        
+        // For touch devices (mobile and tablet)
+        
+    $(".team-item").on("click", function() {
+        $(".contact1").css("opacity", "0");
+        $(".contact1").css("transition", "opacity 0.3s");
+
+        // Get the top offset of the contact1 section
+    var contactTop = $(".team").offset().top;
+    
+    // Scroll to the top of the contact1 section
+    
+
+        // Toggle visibility of dropdown text for the clicked team item
+        $(this).find(".dropdown-text").toggle();
+        
+        // If dropdown is now visible, hide other team items
+        if ($(this).find(".dropdown-text").is(":visible")) {
+            $(".team-item").not(this).hide();
+            $("html, body").animate({ scrollTop: contactTop }, "slow");
+        } else {
+            $(".team-item").show();
+            $(".contact1").css("opacity", "1");
+            $(".contact1").css("transition", "opacity 0s");
+        }
     });
+});
+
+    
+    
+    
+    
+    
     
 
     
