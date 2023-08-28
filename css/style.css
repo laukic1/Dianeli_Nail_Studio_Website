@@ -4,7 +4,7 @@
 body {
     margin:0;
     padding: 0;
-    background-image: url(../img/cover.png);
+    background-image: url("../img/cover.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -710,6 +710,13 @@ a:focus {
     color: #ffffff;
     opacity: 1;
 } */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+    body {
+        background-image: url('../img/mobile-cover.png');
+    }
+}
 
 @media (max-width: 991.98px) {
     body {
@@ -717,7 +724,7 @@ a:focus {
         padding: 0;
         height: 100%;
         width: 100%;
-        background-image: url(../img/mobile-cover.png);
+        background-image: url("../img/mobile-cover.png");
         background-size: cover;
         background-repeat: no-repeat;
         
