@@ -61,6 +61,7 @@ body::after {
         pointer-events: none; /* Allow interaction with elements below the overlay */
         z-index: -1; /* Place the overlay behind the content */
     }
+
 }
 
 * {
@@ -511,6 +512,18 @@ a:focus {
     padding: 3em;
 }
 
+.contact-form {
+    max-width: 100%;
+    width: 100%;
+}
+
+#prijava-mobile {
+    color: #D1B464;
+    font-weight: bold;   
+    margin-right: 1rem;
+    font-size: 30px;
+}
+
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -859,6 +872,12 @@ a:focus {
     .blog .blog-img img {
     width: 100%;
     height: 70%;
+}
+
+.contact1 .contact-form {
+    position: relative;
+    padding: 90px 20px 120px 20px;
+    background: rgba(0, 0, 0, 1);
 }
     
 
@@ -1867,14 +1886,14 @@ body, p {
 
 .contact .contact-form {
     position: relative;
-    padding: 90px 0 120px 0px;
+    padding: 90px 0px 120px 0px;
     background: rgba(0, 0, 0, 0.75);
 }
 
 .contact1 .contact-form {
     position: relative;
-    padding: 90px 0 120px 0px;
-    background: rgba(0, 0, 0, 0.75);
+    padding: 90px 20px 120px 20px;
+    background: rgba(0, 0, 0, 0.95);
 }
 
 .download-container {
