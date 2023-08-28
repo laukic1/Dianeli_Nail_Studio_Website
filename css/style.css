@@ -33,7 +33,7 @@ body::after {
         padding: 0;
         height: 100%;
         width: 100%;
-        background-image: url(../img/mobile-cover.png);
+        background-image: url("../img/mobile-cover.png");
         background-size: cover;
         background-repeat: no-repeat;
         
