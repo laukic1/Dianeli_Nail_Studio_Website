@@ -1186,6 +1186,9 @@ a:focus {
     opacity: 1;
   }
 
+
+
+
 .tecaji-con {
     display: flex;
     justify-content: center;
@@ -1260,9 +1263,23 @@ a:focus {
     margin-left: 4.5rem;
 }
 
+#cenik1, #cenik3 {
+    background: none;
+}
+
+.prijava {
+    text-shadow: 0 0 3px #D1B464;
+}
+
+.fa-regular {
+    text-shadow: 0 0 10px #D1B464;
+}
+
+
+
    .cenik {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     
 }
@@ -1630,11 +1647,26 @@ body, p {
 
 }
 
+.contact1 {
+    position: relative;
+    width: 100%;
+    background: black;
+    box-shadow: 0 0 10px 0 #D5B981;
+
+}
+
 .contact .container-fluid, .cene {
     background: url(../img/contact.jpg) left center no-repeat;
     background-size: contain; 
-    margin-bottom: -50px;
-    margin-top: -50px;
+    margin-bottom: -3em;
+    margin-top: -2.8em;
+} 
+
+.contact1 .container-fluid, .cene {
+    background: url(../img/contact.jpg) left center no-repeat;
+    background-size: contain; 
+    margin-bottom: -3em;
+    margin-top: -2.8em;
 } 
 
 .prijava {
@@ -1657,8 +1689,26 @@ body, p {
 
 .contact .contact-form {
     position: relative;
-    padding: 90px 0 120px 45px;
+    padding: 90px 0 120px 0px;
     background: rgba(0, 0, 0, 0.75);
+}
+
+.contact1 .contact-form {
+    position: relative;
+    padding: 90px 0 120px 0px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.download-container {
+    margin-left: -2.5em;
+}
+
+.prijava-btn-container {
+    margin-top: 3em;
+}
+
+.control-group {
+    margin: 1em 1em;
 }
 
 .contact .contact-form  input {
@@ -1669,7 +1719,24 @@ body, p {
     border-bottom: 1px solid #D5B981;
 }
 
+.contact1 .contact-form  input {
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #D5B981;
+}
+
 .contact .contact-form textarea {
+    height: 90px;
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #D5B981;;
+}
+
+.contact1 .contact-form textarea {
     height: 90px;
     padding: 15px 0;
     background: none;
@@ -1690,12 +1757,35 @@ body, p {
     transition: .3s;
 }
 
+.contact1 .contact-form .btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #D5B981;
+    background: none;
+    border: 2px solid #D5B981;
+    border-radius: 0;
+    transition: .3s;
+}
+
 .contact .contact-form .btn:hover {
     color: #1d2434;
     background: #D5B981;
 }
 
+.contact1 .contact-form .btn:hover {
+    color: #1d2434;
+    background: #D5B981;
+}
+
 .contact .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact1 .help-block ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -1715,20 +1805,60 @@ body, p {
 /*******************************/
 /******* Single Page CSS *******/
 /*******************************/
+
+
+
+.faq-con {
+    margin: 5em 5em;
+    padding: 3em;
+    border: 1px solid #D5B981;
+    box-shadow: 0 0 5px #D5B981;
+    background: rgba(0, 0, 0, 0.75)
+}
+
+.faq-title {
+    color: #D5B981;
+    text-shadow: 0 0 2px #D5B981;
+    font-weight: bold;
+}
+
 .single {
     position: relative;
     width: 100%;
-    padding: 45px 0 65px 0;
+    padding: 0px 0 40px 0;
 }
 
-.single img {
+
+.contact-img {
     width: 100%;
-    margin: 0 0 25px 0;
+    max-width: 50%;
+    box-shadow: 0 0 10px #D5B981;
+    border-radius: 5px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
 }
 
 .single .table,
 .single .list-group {
     margin-bottom: 30px;
+}
+
+.list-group-item {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px #D5B981;
+}
+
+.google-maps-api {
+    margin-bottom: 5em;
+}
+
+.google-map {
+    box-shadow:  0 0 20px #D5B981;
 }
 
 ul {
@@ -1739,6 +1869,7 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
+    color: white;
 }
 
 .single .ul-group {

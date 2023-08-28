@@ -42,6 +42,21 @@
         $(window).resize(toggleNavbarMethod);
     });
     
+    // Tečaji dropdown text
+
+    $(document).ready(function() {
+        $(".team-item").hover(
+            function() {
+                $(".contact1").css("opacity", "0");
+                $(".contact1").css("transition", "opacity 0.3s");
+            },
+            function() {
+                $(".contact1").css("opacity", "1");
+            }
+        );
+    });
+    
+
     
     // Modal Video
     $(document).ready(function () {
