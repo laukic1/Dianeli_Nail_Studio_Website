@@ -1423,7 +1423,7 @@ a:focus {
     justify-content: center;
     border: 1px solid #D1B464;
     background: rgba(0, 0, 0, 0.75);
-    box-shadow: 0 0 10px #D1B464;
+    box-shadow: 0 0 10px white;
     margin: 0 10px 0 10px;
     flex-basis: calc(25% - 20px); 
     transition: transform 0.3s ease-in-out;
