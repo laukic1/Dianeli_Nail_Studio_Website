@@ -494,6 +494,8 @@ a:focus {
     animation: none;
 }
 
+
+
 .loader h2 {
     font-size: 30px;
 }
@@ -908,7 +910,13 @@ a:focus {
     }
     
     .hero .hero-text p {
-        font-size: 14px;
+        font-size: 16px;
+        padding-right: 3em;
+        margin-top: 0.5em;
+        font-weight: 500;
+        color: rgb(207, 205, 205);
+        font-family:Arial, Helvetica, sans-serif;
+        text-shadow: 0 0 5px #d8c17f;
     }
     
     .hero .hero-text .btn {
