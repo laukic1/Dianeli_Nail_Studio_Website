@@ -42,19 +42,6 @@
         $(window).resize(toggleNavbarMethod);
     });
     
-    // Tečaji dropdown text
-
-    // $(document).ready(function() {
-    //     $(".team-item").hover(
-    //         function() {
-    //             $(".contact1").css("opacity", "0");
-    //             $(".contact1").css("transition", "opacity 0.3s");
-    //         },
-    //         function() {
-    //             $(".contact1").css("opacity", "1");
-    //         }
-    //     );
-    // });
 
     $(document).ready(function() {
         // Only apply the hover effect on non-touch devices (desktop)
@@ -71,30 +58,29 @@
         }
         
         // For touch devices (mobile and tablet)
-        
-    $(".team-item").on("click", function() {
-        $(".contact1").css("opacity", "0");
-        $(".contact1").css("transition", "opacity 0.3s, ", "visibility 0s" );
+        var isDropdownVisible = false;
+var activeTeamItem = null;
 
-        // Get the top offset of the contact1 section
-    var contactTop = $(".team").offset().top;
-    
-    // Scroll to the top of the contact1 section
-    
+$(".team-item").on("click", function() {
+    $(".contact1").css("opacity", "0");
+    $(".contact1").css("transition", "opacity 0.3s, visibility 0s");
 
-        // Toggle visibility of dropdown text for the clicked team item
-        $(this).find(".dropdown-text").toggle();
-        
-        // If dropdown is now visible, hide other team items
-        if ($(this).find(".dropdown-text").is(":visible")) {
-            $(".team-item").not(this).hide();
-            $("html, body").animate({ scrollTop: contactTop }, "slow");
-        } else {
-            $(".team-item").show();
-            $(".contact1").css("opacity", "1");
-            $(".contact1").css("transition", "opacity 0s");
-        }
-    });
+    var clickedTeamItem = $(this);
+    
+    if (activeTeamItem === null) {
+        // No active team item, show dropdown and hide others
+        clickedTeamItem.find(".dropdown-text").css("visibility", "visible");
+        activeTeamItem = clickedTeamItem;
+        $(".team-item").not(clickedTeamItem).css("opacity", "0");
+    } else if (activeTeamItem[0] === clickedTeamItem[0]) {
+        // Clicking on the same team item again, restore everything
+        clickedTeamItem.find(".dropdown-text").css("visibility", "hidden");
+        $(".team-item").css("opacity", "1");
+        $(".contact1").css("opacity", "1");
+        $(".contact1").css("transition", "opacity 0s");
+        activeTeamItem = null;
+    }
+});
 });
 
     
@@ -105,22 +91,22 @@
     
 
     
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
+    // // Modal Video
+    // $(document).ready(function () {
+    //     var $videoSrc;
+    //     $('.btn-play').click(function () {
+    //         $videoSrc = $(this).data("src");
+    //     });
+    //     console.log($videoSrc);
 
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
+    //     $('#videoModal').on('shown.bs.modal', function (e) {
+    //         $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+    //     })
 
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
+    //     $('#videoModal').on('hide.bs.modal', function (e) {
+    //         $("#video").attr('src', $videoSrc);
+    //     })
+    // });
 
 
     // Testimonials carousel
