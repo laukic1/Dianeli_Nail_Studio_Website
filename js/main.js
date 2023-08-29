@@ -44,8 +44,39 @@
     
 
     $(document).ready(function() {
-        // Only apply the hover effect on non-touch devices (desktop)
-        if (!('ontouchstart' in window)) {
+        if ('ontouchstart' in window) {
+            // For touch devices (mobile and tablet)
+            var isDropdownVisible = false;
+            var activeTeamItem = null;
+    
+            $(".team-item").on("click", function() {
+                $(".contact1").css("opacity", "0");
+                $(".contact1").css("transition", "opacity 0.3s, visibility 0s");
+    
+                var clickedTeamItem = $(this);
+                var icons = clickedTeamItem.find(".fa-caret-down, .fa-circle-xmark");
+    
+                if (activeTeamItem === null) {
+                    // No active team item, show dropdown and hide others
+                    clickedTeamItem.find(".dropdown-text").css("visibility", "visible");
+
+                    icons.eq(0).hide();
+                    icons.eq(1).show();
+                    activeTeamItem = clickedTeamItem;
+                    $(".team-item").not(clickedTeamItem).css("opacity", "0");
+                } else if (activeTeamItem[0] === clickedTeamItem[0]) {
+                    // Clicking on the same team item again, restore everything
+                    clickedTeamItem.find(".dropdown-text").css("visibility", "hidden");
+                    icons.eq(0).show();
+                    icons.eq(1).hide();
+                    $(".team-item").css("opacity", "1");
+                    $(".contact1").css("opacity", "1");
+                    $(".contact1").css("transition", "opacity 0s");
+                    activeTeamItem = null;
+                }
+            });
+        } else {
+            // Only apply the hover effect on non-touch devices (desktop)
             $(".team-item").hover(
                 function() {
                     $(".contact1").css("opacity", "0");
@@ -56,37 +87,7 @@
                 }
             );
         }
-        
-        // For touch devices (mobile and tablet)
-        var isDropdownVisible = false;
-var activeTeamItem = null;
-
-$(".team-item").on("click", function() {
-    $(".contact1").css("opacity", "0");
-    $(".contact1").css("transition", "opacity 0.3s, visibility 0s");
-
-    var clickedTeamItem = $(this);
-    var icons = clickedTeamItem.find(".fa-caret-down, .fa-circle-xmark")
-    
-    if (activeTeamItem === null) {
-        // No active team item, show dropdown and hide others
-        clickedTeamItem.find(".dropdown-text").css("visibility", "visible");
-        icons.eq(0).hide();
-        icons.eq(1).show();
-        activeTeamItem = clickedTeamItem;
-        $(".team-item").not(clickedTeamItem).css("opacity", "0");
-    } else if (activeTeamItem[0] === clickedTeamItem[0]) {
-        // Clicking on the same team item again, restore everything
-        clickedTeamItem.find(".dropdown-text").css("visibility", "hidden");
-        icons.eq(0).show();
-        icons.eq(1).hide();
-        $(".team-item").css("opacity", "1");
-        $(".contact1").css("opacity", "1");
-        $(".contact1").css("transition", "opacity 0s");
-        activeTeamItem = null;
-    }
-});
-});
+    });
 
     
     

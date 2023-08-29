@@ -872,8 +872,8 @@ a:focus {
 
 
     .blog .blog-img img {
-    width: 100%;
-    height: 70%;
+    width: 300px;
+    height: 300px;
 }
 
 .contact1 .contact-form {
@@ -904,6 +904,7 @@ a:focus {
 }
 
 @media (max-width: 575.98px) {
+
     .hero .hero-text h1 {
         font-size: 25px;
         font-weight: 600;
@@ -941,7 +942,7 @@ a:focus {
 .page-header, .cenik {
     position: relative;
     margin-bottom: -45px;
-    padding: 150px 0 90px 0;
+    padding: 100px 0 30px 0;
     text-align: center;
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
                 radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
@@ -952,7 +953,7 @@ a:focus {
 .page-header {
     position: relative;
     margin-bottom: 45px;
-    padding: 150px 0 90px 0;
+    padding: 100px 0 30px 0;
     text-align: center;
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
                 radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
@@ -1022,6 +1023,32 @@ a:focus {
     
     .page-header a {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 999px) {
+    .page-header, .cenik {
+        position: relative;
+        margin-bottom: -45px;
+        padding: 30px 0 30px 0;
+        text-align: center;
+        background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+                    
+    }
+    
+    
+    .page-header {
+        position: relative;
+        margin-bottom: 45px;
+        padding: 30px 0 30px 0;
+        text-align: center;
+        background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+                    overflow: hidden;
+        background-size: 300% 300%;
+        animation: color1 4s ease-in-out infinite;
+        box-shadow: 0 0 10px 0 #D5B981;
     }
 }
 
@@ -1369,7 +1396,7 @@ a:focus {
 .dropdown-text {
     visibility: hidden;
     position: absolute;
-    top: 0%;
+    top: 50%;
     left: 0;
     margin: 0px 0 35px 0;
     padding: 30px 15px;
@@ -1516,6 +1543,78 @@ body, p {
     padding: 0;
 }
 
+@media (min-width: 540px) and (max-width: 575.98px) {
+    .team {
+        position: relative;
+        width: 100%;
+        padding: 45px 5em 100px 5em;
+    }
+}
+
+@media (min-width: 575.99px) and (max-width: 767.98) {
+    .team {
+        position: relative;
+        width: 100%;
+        padding: 45px 10em 100px 10em;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 999px){
+
+    .service-desc {
+        padding-right: 33vw;
+    }
+    #team-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 821px){
+
+    .service-desc {
+        padding-right: 30vw;
+    }
+
+    #team-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 769px){
+
+    .service-desc {
+        padding-right: 27vw;
+    }
+    #team-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 541px){
+
+    .service-desc {
+        padding-right: 0vw;
+    }
+    #team-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1100px){
+    #tecaji-columns1, #tecaji-columns2, #tecaji-columns3, #tecaji-columns4{
+        margin: 0 0.5em 0em 0.5em;
+        padding-top: 1em; 
+        max-width: 220px;
+    }
+}
 
 /*******************************/
 /******* Testimonial CSS *******/
@@ -1613,8 +1712,8 @@ body, p {
 /*******************************/
 
 .blog-img-dim {
-    height: 350px;
-    
+    height: 300px;
+    width: 300px;
 }
 
 
