@@ -1354,6 +1354,9 @@ a:focus {
 /*******************************/
 /*********** Team CSS **********/
 /*******************************/
+.fa-caret-down {
+    text-shadow: 0 0 7px white;
+}
 
 .dropdown-text {
     visibility: hidden;
