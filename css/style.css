@@ -1,6 +1,69 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+
+/* Scroll animations */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.delay-an:nth-child(2) {
+transition-delay: 200ms;
+}
+
+.delay-an:nth-child(3) {
+    transition-delay: 250ms;
+}
+
+.delay-an:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+@media (max-width: 998px) {
+    .reveal,
+    .reveal.active,
+    .hidden,
+    .show,
+    .delay-an:nth-child(2),
+    .delay-an:nth-child(3),
+    .delay-an:nth-child(4) {
+        transition: none !important; /* Disable transitions */
+        transform: none !important; /* Reset transforms */
+        opacity: 1 !important; /* Ensure full opacity */
+        filter: none !important; /* Reset filters */
+    }
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+
+
 body {
     margin:0;
     padding: 0;
@@ -567,7 +630,17 @@ a:focus {
     }
 }
 
+@media only screen and (max-width: 1400px) {
+    .loader h2 {
+        font-size: 32px;
+    }
+}
 
+@media only screen and (max-width: 1150px) {
+    .loader h2 {
+        font-size: 26px;
+    }
+}
 
 
 
@@ -848,7 +921,7 @@ a:focus {
         min-width: 65vw;
     }
 
-    #team-row {
+    #tecaji-row {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -1387,7 +1460,7 @@ a:focus {
 }
 
 /*******************************/
-/*********** Team CSS **********/
+/***********  Tecaji CSS **********/
 /*******************************/
 .fa-caret-down {
     text-shadow: 0 0 7px white;
@@ -1408,7 +1481,7 @@ a:focus {
     transition: top 0.3s, opacity 0.7s, visibility 0s;
 }
 
-.team-item:hover .dropdown-text {
+.tecaji-item-effect:hover .dropdown-text {
     visibility: visible;
     top: 100%;
     z-index: 3;
@@ -1436,7 +1509,7 @@ a:focus {
     transform: scale(1.05);
 }
 
-.team {
+.tecaji {
     position: relative;
     width: 100%;
     padding: 45px 0 100px 0;
@@ -1445,13 +1518,13 @@ a:focus {
 
 
 
-.team .team-img {
+.tecaji .tecaji-img {
     position: relative;
     box-shadow: 0 0 10px #D1B464;
     
 }
 
-.team .team-img::after {
+.tecaji .tecaji-img::after {
     position: absolute;
     content: "";
     top: 15px;
@@ -1464,14 +1537,14 @@ a:focus {
     z-index: 1;
 }
 
-.team .team-img img {
+.tecaji .tecaji-img img {
     width: 100%;
     height: 250px;
 }
     
 
 
-.team .team-text {
+.tecaji .tecaji-text {
     position: relative;
     margin: -60px 10px 35px 10px;
     padding: 30px 15px;
@@ -1482,7 +1555,7 @@ a:focus {
 }
 
 
-#team-img1, #team-img2, #team-img3, #team-img4  {
+#tecaji-img1, #tecaji-img2, #tecaji-img3, #tecaji-img4  {
     height: 200px;
     width: 200px;
 }
@@ -1517,24 +1590,24 @@ a:focus {
     
 }
 
-.team .team-text h2 {
+.tecaji .tecaji-text h2 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.team .team-text p {
+.tecaji .tecaji-text p {
     margin: 0;
     color: #D1B464;
 }
 
 
-.team .team-item:hover .team-text {
+.tecaji .tecaji-item-effect:hover .tecaji-text {
     background: #D5B981;
 }
 
-.team .team-item:hover .team-img::after {
+.tecaji .tecaji-item-effect:hover .tecaji-img::after {
     border-color: #D5B981;
 }
 
@@ -1544,7 +1617,7 @@ body, p {
 }
 
 @media (min-width: 540px) and (max-width: 575.98px) {
-    .team {
+    .tecaji {
         position: relative;
         width: 100%;
         padding: 45px 5em 100px 5em;
@@ -1552,7 +1625,7 @@ body, p {
 }
 
 @media (min-width: 575.99px) and (max-width: 767.98) {
-    .team {
+    .tecaji {
         position: relative;
         width: 100%;
         padding: 45px 10em 100px 10em;
@@ -1564,7 +1637,7 @@ body, p {
     .service-desc {
         padding-right: 33vw;
     }
-    #team-row {
+    #tecaji-row {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1577,7 +1650,7 @@ body, p {
         padding-right: 30vw;
     }
 
-    #team-row {
+    #tecaji-row {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1589,7 +1662,7 @@ body, p {
     .service-desc {
         padding-right: 27vw;
     }
-    #team-row {
+    #tecaji-row {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1601,7 +1674,7 @@ body, p {
     .service-desc {
         padding-right: 0vw;
     }
-    #team-row {
+    #tecaji-row {
         display: flex;
         justify-content: center;
         align-items: center;

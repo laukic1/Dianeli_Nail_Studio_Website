@@ -43,6 +43,7 @@
     });
     
 
+//Tečaji page user experiance functionality
     $(document).ready(function() {
         if ('ontouchstart' in window) {
             // For touch devices (mobile and tablet)
@@ -89,31 +90,40 @@
         }
     });
 
-    
-    
-    
-    
-    
-    
 
-    
-    // // Modal Video
-    // $(document).ready(function () {
-    //     var $videoSrc;
-    //     $('.btn-play').click(function () {
-    //         $videoSrc = $(this).data("src");
-    //     });
-    //     console.log($videoSrc);
+    // Section reveal and other elements animation on scroll
 
-    //     $('#videoModal').on('shown.bs.modal', function (e) {
-    //         $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-    //     })
+    window.addEventListener('scroll', reveal);
 
-    //     $('#videoModal').on('hide.bs.modal', function (e) {
-    //         $("#video").attr('src', $videoSrc);
-    //     })
-    // });
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
 
+        for(var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealPoint = 150;
+
+            if(revealTop < windowHeight - revealPoint) {
+                reveals[i].classList.add('active');
+            } else {
+                reveals[i].classList.remove('active');
+            }
+        }
+
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
 
     // Testimonials carousel
     $(".testimonials-carousel").owlCarousel({
